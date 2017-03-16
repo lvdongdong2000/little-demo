@@ -1,0 +1,4 @@
+一，数据库，database,DB。DBA。
+二，数据库类型：1，mysql。2，oracle甲骨文。3，sqlite。4，sql2000……。
+    SQL语句。增，删，改，查。字段。
+      insert x == ,delete xx where id=X,update select * from X.
