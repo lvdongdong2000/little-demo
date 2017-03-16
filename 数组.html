@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //
+    //       console.log ([23,34,1,2,3,4].fill(4,start=1,end=5));
+    //
+    //    var arr = [1, 2, 3, 4, 5, 6, 7];
+    //    console.log(arr.indexOf(2));
+    //    //结果为1;
+    //    console.log(arr.indexOf(2, fromIndex = 7));
+    //    //结果为-1;
+    //    console.log(arr.indexOf(5, fromIndex = 2));
+    //    //结果为4;
+    //    console.log(arr.indexOf(3, fromIndex = 1));
+    //    //结果为2;
+    //    console.log(arr.indexOf(5, fromIndex = -4));
+    //    //结果为4
+    //    console.log(arr.indexOf(5, fromIndex = -7));
+    //    //结果为4
+    //    console.log(arr.indexOf(5, fromIndex = -8));
+    //    //结果为4；
+    //
+    //    //    var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    //    //    myArray.reverse();
+    //    //    console.log(myArray);
+    //    var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    //    myArray.splice(2, 4, 13, 14, 15, 16);
+    //    console.log(myArray);
+    //    //结果是[1,2,13,14,15,16,7,8,9]
+    //    var myArray1 = [1, 3, 4, 5, 6];
+    //    myArray1.splice(3, 0, 90);
+    //    console.log(myArray1);
+    //    //结果为[1,3,4,90,5,6]
+    //    var myArray2 = [11, 12, 13, 14, 15, 17, 16, 18, 0, 0];
+    //    myArray2.splice(-4, 0, 80);
+    //    console.log(myArray2);
+    //    //结果为[11,12,13,14,15,17,80,16,18,0,0]
+    //    var myArray3 = [11, 12, 13, 14, 15, 17, 16, 18, 0, 1];
+    //    myArray3.splice(-4, 2, 80);
+    //    console.log(myArray3);
+    //    //结果为[11,12,13,14,1517,80,0,1]
+    //    var myArray4 = [11, 12, 13, 14, 15, 17, 16, 18, 2, 6, 1];
+    //    myArray4.splice(-4, 4, 80);
+    //    console.log(myArray4);
+    //    //结果为[11,12,13,14,15,17,16,80]
+
+    //    function logArrayElements(element, index, array) {
+    //        console.log("a[" + index + "] = " + element);
+    //    }
+    //    [2, null, 9].forEach(logArrayElements);
+    //
+    //    function logArrayElements(element, index, array) {
+    //        console.log("a[" + index + "] = " + element);
+    //    }
+    //    [2, undefined, null].some(logArrayElements);
+    /**
+     * 查找质数的函数
+     * @param element
+     * @param index
+     * @param array
+     * @returns {boolean}
+     */
+//    function isPrime(element, index, array) {
+//        var start = 2;
+//        while (start <= Math.sqrt(element)) {
+//            if (element % start++ < 1) return false;
+//        }
+//        return index;
+//    }
+//
+//    console.log( [4, 6, 8, 12].findIndex(isPrime) ); // -1, 没找到质数元素
+//    console.log( [4, 6, 8,11 ,12].findIndex(isPrime) ); // 2
+
+    var myFish = ["angel", "clown", "mandarin", "surgeon"];
+
+    console.log("myFish before: " + myFish);
+
+    var popped = myFish.pop();
+
+    console.log("myFish after: " + myFish);
+    console.log("Removed this element: " + popped);
+
+
+    var sports = ["soccer", "baseball"];
+    var total = sports.push("football", "swimming");
+
+    console.log(sports); // ["soccer", "baseball", "football", "swimming"]
+    console.log(total);  // 4
+
+    [1, 2, 3].includes(2);     // true
+    [1, 2, 3].includes(4);     // false
+    [1, 2, 3].includes(3, 3);  // false
+    [1, 2, 3].includes(3, -1); // true
+    [1, 2, NaN].includes(NaN); // true
+
+    var numbers = [1, 4, 9];
+    var roots = numbers.map(Math.sqrt);
+    console.log(roots);
+
+    var a = 9;
+    var b = 80;
+    var c=a.toString();
+    var d=b.toString();
+    if(c>d){
+        console.log("ture");
+    }
+</script>
+</body>
+</html>
